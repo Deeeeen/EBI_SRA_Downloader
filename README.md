@@ -20,3 +20,15 @@ e.g. python3 EBI_SRA_Downloader.py -ebi [ebiaccession_number] -prep [prep_file_n
 #### Customize study file name
 -study [study_file_name]  
 e.g. python3 EBI_SRA_Downloader.py -ebi [ebiaccession_number] -study [study_file_name]
+#### Filter out non-metagenomic samples
+-all-seqs true
+without setting the flag, the non-metagenomic samples will be filtered out
+e.g. python3 EBI_SRA_Downloader.py -ebi [ebiaccession_number] -all-seqs true
+#### Filter out non-illumina samples
+-all-platform true
+without setting the flag, the non-illumina samples will be filtered out
+e.g. python3 EBI_SRA_Downloader.py -ebi [ebiaccession_number] -all-platform true
+#### Debug mode
+-debug true
+with setting the flag, the downloader will NOT download massive size sequence files (fastq)
+e.g. python3 EBI_SRA_Downloader.py -ebi [ebiaccession_number] -debug true
