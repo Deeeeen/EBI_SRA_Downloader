@@ -60,7 +60,7 @@ def ebi_create_details_file(study_accession, file_suffix="_detail"):
     """
     # Grab the details related to the given accession
     study_details = study_accession + file_suffix + ".txt"
-    host = "http://www.ebi.ac.uk/ena/data/warehouse/filereport?accession="
+    host = "https://www.ebi.ac.uk/ena/portal/api/filereport?accession="
     read_type = "&result=read_run&"
     fields = "library_name,secondary_sample_accession,run_accession," + \
              "experiment_accession,fastq_ftp,library_source," + \
